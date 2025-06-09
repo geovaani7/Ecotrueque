@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <script src="js/main.js"></script>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <title>
+            Proyecto Reciclaje 602
+        </title>
+    </head>
+    <body>
+        <header class="encabezado">
+            <img src="img/logo.png" width="100px" height="100px">
+            <h1>
+                EcoTrueque
+            </h1>
+            <ul> 
+                <li>
+                    <a href="php/loginoca.php">Inicio de Sesión</a>
+                </li>
+                <li>
+                    <a href="php/prueba.php">Registro de Usuario</a>
+                </li>
+                <li>
+                    <a href="html/agenda2030.html">Agenda 2030</a>
+                </li>
+            </ul>
+        </header>
+        <div class="Inicio">
+            <p>
+                <img src="img/Eco.png" width="245px" height="250px">EcoTrueque
+            </p>
+        </div>
+        <div class="botonp">
+            <a href="php/loginoca.php">Ingresar a la página</a>
+        </div>
+        <div class="infopri">
+            <h3>
+                Conoce EcoTrueque
+            </h3>
+            <p style="font-size: 20px;">
+                Ecotrueque es una aplicación web diseñada para facilitar la donación y recepción de residuos sólidos con el propósito de 
+                mejorar la infraestructura del CECYTEM. La aplicación ofrece una plataforma centralizada que permite a donantes, receptores 
+                y administradores gestionar las transacciones de donación de residuos sólidos de manera eficiente.<br>
+                Beneficios de Ecotrueque:<br>
+                Facilita la gestión de donaciones de residuos sólidos para el CECYTEM, lo que contribuye a la mejora de su infraestructura.<br>
+                Ayuda a reducir la cantidad de residuos en vertederos al promover la reutilización y el reciclaje.<br>
+                Fomenta la colaboración entre donantes y receptores con intereses comunes en la gestión sostenible de residuos.<br>
+            </p>
+        </div>
+        <div class="desplegable">
+            <div class="desplegable-lista" onclick="showInfo(1)">
+                <img src="img/desp-1.jpg" alt="Cómo tirar">
+                <div class="desplegable-info hidden">
+                    <h2>
+                        Tipos de Residuos Sólidos:
+                    </h2>
+                    <p>
+                        Los residuos sólidos se dividen en varias categorías, cada una con su propia naturaleza y potencial impacto ambiental. 
+                        Estas categorías incluyen:<br>
+                        Residuos Sólidos Urbanos (RSU): Estos son los residuos generados por actividades domésticas y comerciales en áreas 
+                        urbanas. Incluyen desechos de alimentos, envases, papel, cartón, vidrio, plástico y textiles. La gestión adecuada de 
+                        RSU es crucial para prevenir la contaminación y reducir la carga en vertederos.<br>
+                        Residuos de Construcción y Demolición (RCD): Los RCD provienen de la construcción, renovación y demolición de edificios 
+                        y estructuras. Comprenden escombros, madera, metal, yeso y otros materiales. La reutilización y reciclaje de RCD 
+                        pueden reducir la demanda de recursos naturales y disminuir la cantidad de residuos que ingresan a vertederos.<br>
+                        Residuos Peligrosos: Estos residuos contienen sustancias químicas tóxicas o inflamables que pueden representar un 
+                        riesgo para la salud humana y el medio ambiente. Ejemplos incluyen productos químicos industriales, baterías, aceites 
+                        usados y productos electrónicos desechados. La gestión adecuada de residuos peligrosos es fundamental para evitar la 
+                        contaminación del suelo y el agua.
+                    </p>
+                </div>
+            </div>
+            <div class="desplegable-lista" onclick="showInfo(2)">
+                <img src="img/desp-2.jpg" alt="Reciclaje">
+                <div class="desplegable-info hidden">
+                    <h2>
+                        Impacto Ambiental de los Residuos Sólidos:
+                    </h2>
+                    <p>
+                        Los residuos sólidos tienen varios impactos negativos en el entorno natural, tales como:<br>
+                        Contaminación del Suelo y Agua: La acumulación de residuos sólidos mal gestionados puede dar lugar a la filtración 
+                        de sustancias químicas tóxicas en el suelo y el agua subterránea, lo que afecta la calidad del agua y daña la salud 
+                        de los ecosistemas.<br>
+                        Emisiones de Gases de Efecto Invernadero: La descomposición anaeróbica de materia orgánica en vertederos genera 
+                        metano, un poderoso gas de efecto invernadero que contribuye al cambio climático. La gestión de residuos orgánicos 
+                        es esencial para reducir estas emisiones.<br>
+                        Depleción de Recursos Naturales: La producción y eliminación de productos desechables contribuye a la depleción de 
+                        recursos naturales, como la madera, el petróleo y los minerales. Esto acentúa la presión sobre los ecosistemas y 
+                        aumenta la huella ecológica.
+                    </p>
+                </div>
+            </div>
+            <div class="desplegable-lista" onclick="showInfo(3)">
+                <img src="img/desp-1.jpg" alt="Vender">
+                <div class="desplegable-info hidden">
+                    <h2>
+                        Soluciones Sostenibles y Gestión de Residuos:
+                    </h2>
+                    <p>
+                        Para mitigar los impactos negativos de los residuos sólidos, se requieren enfoques sostenibles y tecnologías 
+                        avanzadas. Algunas soluciones incluyen:<br>
+                        Reciclaje y Reutilización: Fomentar la clasificación y reciclaje de materiales como papel, vidrio, plástico y 
+                        metales puede reducir la cantidad de residuos enviados a vertederos y conservar recursos naturales.<br>
+                        Compostaje: La conversión de residuos orgánicos en compost no solo reduce la cantidad de residuos en vertederos, 
+                        sino que también mejora la calidad del suelo y reduce la emisión de metano.<br>
+                        Economía Circular: Promover la reutilización de productos y la reducción de envases desechables es esencial para 
+                        reducir la generación de residuos desde la fuente y fomentar la sostenibilidad a lo largo de todo el ciclo de vida 
+                        de los productos.<br>
+                        Tecnologías de Tratamiento Avanzado: La incineración controlada y la digestión anaeróbica de residuos sólidos 
+                        pueden minimizar los impactos ambientales y recuperar energía o subproductos útiles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
