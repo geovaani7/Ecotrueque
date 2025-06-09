@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buscador</title>
+        <link rel="stylesheet" href="../css/stylesBuscadores.css">
+        <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <header class="encabezado">
+            <img src="../img/logo.png" width="100px" height="100px">
+            <ul>
+                <li>
+                    <a href="interfaz.html">Regresar</a>
+                </li>
+        </header>
+        <div class="eco">
+            <h1>
+                EcoTransac
+            </h1>
+        </div>
+        <main>
+            <form id="buscador-form">
+                <input type="text" id="buscador-input" autocomplete="off" placeholder="Buscar...">
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="resultados-list">
+                <button class="acordeon-boton">PET</button>
+                <div class="acordeon-contenido">
+                    <p>
+                        Precio de venta: 11$ por kg
+                    </p>
+                </div>
+
+                <button class="acordeon-boton">Papel</button>
+                <div class="acordeon-contenido">
+                    <p>
+                        Precio de venta: 10$ por kg
+                    </p>
+                </div>
+           
+                <button class="acordeon-boton">Metal</button>
+                <div class="acordeon-contenido">
+                    <p>
+                        Precio de venta: 150$ por kg
+                    </p>
+                </div>
+                <button class="acordeon-boton">Vidrio</button>
+                <div class="acordeon-contenido">
+                    <p>
+                        Precio de venta: 28$ por kg
+                    </p>
+                </div>
+            </div>
+            <div id="error-404" class="hidden">
+                <h2>Error 404</h2>
+                <p>Lo sentimos, no encontramos lo que estabas buscando.</p>
+                <img src="../img/404.jpg" alt="Error 404" width="150px" height="150px">
+            </div>
+        </main>
+        <script src="../js/buscadores.js"></script>
+</body>
+</html>

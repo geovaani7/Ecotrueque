@@ -1,0 +1,265 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    color: #3c3c3c;
+    transform-origin: top; 
+    font-family: 'Times New Roman', Times, serif;
+    scale: 0.8;
+}
+
+::-webkit-scrollbar {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.encabezado img {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.encabezado h1 {
+    margin-left: 50px;
+    margin-top: -8px;
+}
+
+.encabezado ul {
+    text-align: right;
+}
+
+.encabezado li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+}
+
+.encabezado li a {
+    color: #3c3c3c;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 20px 20px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.encabezado a:hover {
+    text-decoration: none;
+    padding: 20px 20px;
+    color: #000000;
+}
+
+.encabezado li a:hover::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    left: 0;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0;
+}
+
+.encabezado li a:hover {
+    margin-left: 20px;
+}
+
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px;
+    }
+}
+
+.Inicio {
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 180px;
+    margin-left: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+}
+
+.Inicio img {
+    float: right;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+.botonp {
+    margin-bottom: 250px;
+    margin-left: 25px;
+}
+
+.botonp a {
+    color: aliceblue;
+    background-color: #3c3c3c;
+    text-decoration: none;
+    font-size: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.infopri {
+	margin: 0;
+    margin-left: 25px;
+	padding: 0;
+	margin-right: 10px;
+	color: aliceblue;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #3c3c3c;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+.infopri h3 {
+    color: aliceblue;
+}
+
+.infopri p {
+    color: aliceblue;
+    text-align: justify;
+}
+
+h1 {
+    margin: 0;
+}
+
+.desplegable {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.desplegable-lista {
+    width: 300px;
+    background-color: #3c3c3c;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.desplegable-lista:hover {
+    transform: scale(1.05);
+}
+
+.desplegable-lista img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.desplegable-info {
+    margin-top: 20px;
+}
+
+.desplegable-info p {
+    color: aliceblue;
+    font-size: 16px;
+    line-height: 2.0;
+}
+
+.desplegable-info h2 {
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.desplegable-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.desplegable-info select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.desplegable-info form {
+    margin-top: 20px;
+}
+
+.desplegable-info textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.agenda2030 {
+    background-color: #3c3c3c;
+    color: aliceblue;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.agenda2030 h2 {
+    color: aliceblue;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.agenda2030 p {
+    color: aliceblue;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.imgagenda {
+    text-align: center;
+}
+
+.imgagenda img {
+    display: inline-block;
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+    margin-top: 15px;
+    text-align: justify;
+    text-align: left;
+    margin: 50px 20%;
+}
+
+.title h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.title p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        margin: 50px 0;
+    }
+}
+
